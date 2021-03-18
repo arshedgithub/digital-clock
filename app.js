@@ -21,9 +21,9 @@ showDate = () => {
     seconds.textContent = sec;
     meridiem.innerText = (hr<12) ? ' AM' : ' PM' ;  
     
-    // let yr = date.getFullYear();
-    // let mon = date.getMonth();
-    // let dt = date.getDate();
+    let yr = date.getFullYear();
+    let mon = date.getMonth();
+    let dt = date.getDate();
 
     setTimeout(showDate, 1000);   // update the time
 }
