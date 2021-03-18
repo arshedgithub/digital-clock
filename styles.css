@@ -1,0 +1,14 @@
+.clock{
+    margin: 30px auto;
+    width: 400px;
+    border: 10px solid rgb(196, 12, 12);
+    border-radius: 10px;
+    background-color: rgba(1, 18, 37, 0.959);
+    color: rgb(122, 212, 248);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.displayTime{
+    font-size: 48px;
+}
