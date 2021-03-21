@@ -1,13 +1,15 @@
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
 const seconds = document.getElementById("seconds");
-const displayTime = document.getElementById("displayTime");
+const displayTime = document.querySelector(".displayTime");
+const displayDate = document.querySelector(".displayDate");
 let date;
 let meridiem;
 
 showDate = () => {
     date = new Date();   // current Time & date
 
+    // get values
     let hr = date.getHours();
     let min = date.getMinutes();
     let sec = date.getSeconds();
@@ -15,7 +17,6 @@ showDate = () => {
     let mon = date.getMonth();
     let dy = date.getDate();
 
-    
     // add 0 as a prefix
     hr = (hr<10) ? '0' + hr : hr;
     min = (min<10) ? '0' + min : min;
